@@ -3,7 +3,7 @@
 <title>Pros and Cons of Single-Domain, Multi-Domain, and Wildcard Certificates | PKI Consortium</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta content="microsoft,ssl" name=keywords>
+<meta content="microsoft,ssl,tls,multi-domain,server,website,wildcard,certificates,single-domain" name=keywords>
 <meta property="og:title" content="Pros and Cons of Single-Domain, Multi-Domain, and Wildcard Certificates">
 <meta property="og:description" content="We have previously written about the different types of SSL certificates, but in that article we focused on validation levels. A recent post on LinkedIn highlighted the fact that there is another dimension that we haven’t yet explored.
 SSL certificates come in three basic packages: “single-domain” certificates that can only be used on one specific website, “multi-domain” certificates that can be used on more than one website, and “wildcard” certificates that can be used on any website within a specific domain name.">
@@ -62,30 +62,27 @@ Wednesday February 26, 2014
 <div class=row>
 <div class="col-lg-9 order-lg-1">
 <article id=content>
-<hr>
 <p>We have previously written about the <a href=https://casecurity.org/2013/08/07/what-are-the-different-types-of-ssl-certificates/>different types of SSL certificates</a>, but in that article we focused on validation levels. A recent <a href="https://kb.wisc.edu/page.php?id=18922">post on LinkedIn</a> highlighted the fact that there is another dimension that we haven’t yet explored.</p>
 <p>SSL certificates come in three basic packages: “single-domain” certificates that can only be used on one specific website, “multi-domain” certificates that can be used on more than one website, and “wildcard” certificates that can be used on any website within a specific domain name. Multi-domain certificates are often called “unified communications” or “UC” certificates. This is a reference to one common use of these certificates, which is to secure Microsoft messaging products such as Exchange and Lync. The table below shows examples of the number and types of websites that each of these packages can protect:</p>
-<p>| Type of Certificate | Example Websites Protected |
-|</p>
 <table>
 <thead>
 <tr>
-<th>Type of Certificate</th>
-<th>Example Websites Protected</th>
+<th style=text-align:left>Type of Certificate</th>
+<th style=text-align:left>Example Websites Protected</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Single-domain</td>
-<td><a href=https://www.firstwebsite.com>https://www.firstwebsite.com</a></td>
+<td style=text-align:left>Single-domain</td>
+<td style=text-align:left><a href=https://www.firstwebsite.com>https://www.firstwebsite.com</a></td>
 </tr>
 <tr>
-<td>Multi-domain (UCC)</td>
-<td><a href=https://www.firstwebsite.com>https://www.firstwebsite.com</a> <a href=https://www.secondwebsite.com>https://www.secondwebsite.com</a> <a href=https://www.thirdwebsite.com>https://www.thirdwebsite.com</a></td>
+<td style=text-align:left>Multi-domain (UCC)</td>
+<td style=text-align:left><a href=https://www.firstwebsite.com>https://www.firstwebsite.com</a> <a href=https://www.secondwebsite.com>https://www.secondwebsite.com</a> <a href=https://www.thirdwebsite.com>https://www.thirdwebsite.com</a></td>
 </tr>
 <tr>
-<td>Wildcard (*)</td>
-<td><a href=https://blog.firstwebsite.com>https://blog.firstwebsite.com</a> <a href=https://www.firstwebsite.com>https://www.firstwebsite.com</a> <a href=https://shop.firstwebsite.com>https://shop.firstwebsite.com</a> (unlimited number of subdomains)</td>
+<td style=text-align:left>Wildcard (*)</td>
+<td style=text-align:left><a href=https://blog.firstwebsite.com>https://blog.firstwebsite.com</a> <a href=https://www.firstwebsite.com>https://www.firstwebsite.com</a> <a href=https://shop.firstwebsite.com>https://shop.firstwebsite.com</a> (unlimited number of subdomains)</td>
 </tr>
 </tbody>
 </table>
@@ -113,11 +110,11 @@ Wayne Thayer
 </p>
 <h4>Related Articles</h4>
 <ul>
-<li><a href=/2014/09/24/google-plans-to-deprecate-sha-1-certificates-updated/>Google Plans to Deprecate SHA-1 Certificates – Updated</a></li>
-<li><a href=/2014/08/28/google-plans-to-deprecate-sha-1-certificates/>Google Plans to Deprecate SHA-1 Certificates</a></li>
-<li><a href=/2014/08/19/who-sets-the-rules-governing-certification-authorities/>Who Sets the Rules Governing Certification Authorities?</a></li>
 <li><a href=/2014/07/24/in-the-wake-of-unauthorized-certificate-issuance-by-the-indian-ca-nic-can-government-cas-still-be-considered-trusted-third-parties/>In the Wake of Unauthorized Certificate Issuance by the Indian CA NIC, can Government CAs Still be Considered “Trusted Third Parties”?</a></li>
 <li><a href=/2014/07/18/what-to-do-when-you-rely-on-internal-names-in-tls/ssl-certificates/>What To Do When You Rely on Internal Names in TLS/SSL Certificates</a></li>
+<li><a href=/2014/03/17/ca-security-council-members-presentation-at-rsa-2014-conference-new-ideas-on-caa-ct-and-public-key-pinning-for-a-safer-internet/>CA Security Council Members Presentation at RSA 2014 Conference: New Ideas on CAA, CT, and Public Key Pinning for a Safer Internet</a></li>
+<li><a href=/2014/01/16/always-on-ssl-part-i/>Always-On SSL, Part I</a></li>
+<li><a href=/2014/01/06/2014-looking-back-moving-forward/>2014 – Looking Back, Moving Forward</a></li>
 </ul>
 <h4>Related Topics</h4>
 <ul></ul>
@@ -164,68 +161,68 @@ Think Twice Before Using DV for E-Commerce<svg xmlns="http://www.w3.org/2000/svg
 </main>
 <div class="container members text-nowrap overflow-hidden my-4 text-center">
 <div class=banner>
-<a href=/members/encryptionconsulting/ title="Encryption Consulting, %!s(<nil>) - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="Encryption Consulting, %!s(<nil>) - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Encryption Consulting, %!s(<nil>) - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/encryptionconsulting/encryptionconsulting.svg>
-</a>
-<a href=/members/bakertilly/ title="Baker Tilly, Now, for tomorrow - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="Baker Tilly, Now, for tomorrow - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Baker Tilly, Now, for tomorrow - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/bakertilly/bakertilly.svg>
-</a>
-<a href=/members/izenpe/ title="Izenpe, Qualified Trusted Service Provider in the Basque Country - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="Izenpe, Qualified Trusted Service Provider in the Basque Country - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Izenpe, Qualified Trusted Service Provider in the Basque Country - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/izenpe/izenpe.svg>
-</a>
-<a href=/members/firmaprofesional/ title="Firmaprofesional, We innovate to create secure and efficient transaction environments - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="Firmaprofesional, We innovate to create secure and efficient transaction environments - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Firmaprofesional, We innovate to create secure and efficient transaction environments - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/firmaprofesional/firmaprofesional.svg>
-</a>
-<a href=/members/microsec/ title="Microsec, Digital legally binding & user friendly solutions - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="Microsec, Digital legally binding & user friendly solutions - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Microsec, Digital legally binding & user friendly solutions - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/microsec/microsec.svg>
-</a>
-<a href=/members/ascertia/ title="Ascertia, Identity Proven, Trust Delivered - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="Ascertia, Identity Proven, Trust Delivered - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Ascertia, Identity Proven, Trust Delivered - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/ascertia/ascertia.svg>
-</a>
-<a href=/members/sixscape/ title="Sixscape Communications, Cryptographic Authentication & Identity - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="Sixscape Communications, Cryptographic Authentication & Identity - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Sixscape Communications, Cryptographic Authentication & Identity - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/sixscape/sixscape.svg>
-</a>
-<a href=/members/harica/ title="HARICA, Hellenic Academic and Research Institutions Certification Authority - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="HARICA, Hellenic Academic and Research Institutions Certification Authority - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="HARICA, Hellenic Academic and Research Institutions Certification Authority - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/harica/harica.svg>
-</a>
-<a href=/members/dtrust/ title="D-Trust, Paving the way for social and economic progress - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="D-Trust, Paving the way for social and economic progress - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="D-Trust, Paving the way for social and economic progress - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/dtrust/dtrust.svg>
-</a>
-<a href=/members/ecac/ title="ECAC, Electronic Certification Accreditation Council - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="ECAC, Electronic Certification Accreditation Council - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="ECAC, Electronic Certification Accreditation Council - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/ecac/ecac.svg>
-</a>
-<a href=/members/securetrust/ title="Secure Trust, A TrustWave Company - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="Secure Trust, A TrustWave Company - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Secure Trust, A TrustWave Company - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/securetrust/securetrust.svg>
+<a href=/members/keytalk/ title="Keytalk, CA Independent Certificate implementation, distribution and management - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="Keytalk, CA Independent Certificate implementation, distribution and management - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Keytalk, CA Independent Certificate implementation, distribution and management - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/keytalk/keytalk.svg>
 </a>
 <a href=/members/sslcom/ title="SSL.com, Trust is what we do - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
 <img class=member-logo alt="SSL.com, Trust is what we do - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="SSL.com, Trust is what we do - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/sslcom/sslcom.svg>
 </a>
-<a href=/members/utimaco/ title="Utimaco, Creating Trust in the Digital Society - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="Utimaco, Creating Trust in the Digital Society - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Utimaco, Creating Trust in the Digital Society - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/utimaco/utimaco.svg>
+<a href=/members/trustzone/ title="TRUSTZONE, Encrypt, Authenticate, Automate™ - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="TRUSTZONE, Encrypt, Authenticate, Automate™ - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="TRUSTZONE, Encrypt, Authenticate, Automate™ - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/trustzone/trustzone.svg>
 </a>
-<a href=/members/keytalk/ title="Keytalk, CA Independent Certificate implementation, distribution and management - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="Keytalk, CA Independent Certificate implementation, distribution and management - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Keytalk, CA Independent Certificate implementation, distribution and management - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/keytalk/keytalk.svg>
+<a href=/members/dtrust/ title="D-Trust, Paving the way for social and economic progress - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="D-Trust, Paving the way for social and economic progress - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="D-Trust, Paving the way for social and economic progress - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/dtrust/dtrust.svg>
+</a>
+<a href=/members/firmaprofesional/ title="Firmaprofesional, We innovate to create secure and efficient transaction environments - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="Firmaprofesional, We innovate to create secure and efficient transaction environments - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Firmaprofesional, We innovate to create secure and efficient transaction environments - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/firmaprofesional/firmaprofesional.svg>
+</a>
+<a href=/members/cleverbase/ title="Cleverbase, Securely e-sign your documents - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="Cleverbase, Securely e-sign your documents - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Cleverbase, Securely e-sign your documents - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/cleverbase/cleverbase.svg>
+</a>
+<a href=/members/ascertia/ title="Ascertia, Identity Proven, Trust Delivered - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="Ascertia, Identity Proven, Trust Delivered - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Ascertia, Identity Proven, Trust Delivered - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/ascertia/ascertia.svg>
+</a>
+<a href=/members/encryptionconsulting/ title="Encryption Consulting, %!s(<nil>) - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="Encryption Consulting, %!s(<nil>) - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Encryption Consulting, %!s(<nil>) - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/encryptionconsulting/encryptionconsulting.svg>
+</a>
+<a href=/members/harica/ title="HARICA, Hellenic Academic and Research Institutions Certification Authority - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="HARICA, Hellenic Academic and Research Institutions Certification Authority - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="HARICA, Hellenic Academic and Research Institutions Certification Authority - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/harica/harica.svg>
+</a>
+<a href=/members/izenpe/ title="Izenpe, Qualified Trusted Service Provider in the Basque Country - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="Izenpe, Qualified Trusted Service Provider in the Basque Country - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Izenpe, Qualified Trusted Service Provider in the Basque Country - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/izenpe/izenpe.svg>
 </a>
 <a href=/members/buypass/ title="Buypass, We bring you a safer digital world - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
 <img class=member-logo alt="Buypass, We bring you a safer digital world - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Buypass, We bring you a safer digital world - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/buypass/buypass.svg>
 </a>
-<a href=/members/trustzone/ title="TRUSTZONE, Encrypt, Authenticate, Automate™ - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="TRUSTZONE, Encrypt, Authenticate, Automate™ - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="TRUSTZONE, Encrypt, Authenticate, Automate™ - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/trustzone/trustzone.svg>
+<a href=/members/bakertilly/ title="Baker Tilly, Now, for tomorrow - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="Baker Tilly, Now, for tomorrow - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Baker Tilly, Now, for tomorrow - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/bakertilly/bakertilly.svg>
 </a>
 <a href=/members/sectigo/ title="Sectigo, Over 20 Years of Established Leadership - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
 <img class=member-logo alt="Sectigo, Over 20 Years of Established Leadership - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Sectigo, Over 20 Years of Established Leadership - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/sectigo/sectigo.svg>
 </a>
-<a href=/members/primekey/ title="PrimeKey, Creating trust for the connected society - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="PrimeKey, Creating trust for the connected society - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="PrimeKey, Creating trust for the connected society - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/primekey/primekey.svg>
+<a href=/members/microsec/ title="Microsec, Digital legally binding & user friendly solutions - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="Microsec, Digital legally binding & user friendly solutions - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Microsec, Digital legally binding & user friendly solutions - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/microsec/microsec.svg>
 </a>
-<a href=/members/cleverbase/ title="Cleverbase, Securely e-sign your documents - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
-<img class=member-logo alt="Cleverbase, Securely e-sign your documents - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Cleverbase, Securely e-sign your documents - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/cleverbase/cleverbase.svg>
+<a href=/members/securetrust/ title="Secure Trust, A TrustWave Company - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="Secure Trust, A TrustWave Company - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Secure Trust, A TrustWave Company - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/securetrust/securetrust.svg>
+</a>
+<a href=/members/utimaco/ title="Utimaco, Creating Trust in the Digital Society - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="Utimaco, Creating Trust in the Digital Society - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Utimaco, Creating Trust in the Digital Society - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/utimaco/utimaco.svg>
 </a>
 <a href=/members/entrust/ title="Entrust, Securing a world in motion - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
 <img class=member-logo alt="Entrust, Securing a world in motion - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Entrust, Securing a world in motion - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/entrust/entrust.svg>
 </a>
 <a href=/members/ecac/ title="ECAC, Electronic Certification Accreditation Council - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
 <img class=member-logo alt="ECAC, Electronic Certification Accreditation Council - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="ECAC, Electronic Certification Accreditation Council - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/ecac/ecac.svg>
+</a>
+<a href=/members/ecac/ title="ECAC, Electronic Certification Accreditation Council - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="ECAC, Electronic Certification Accreditation Council - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="ECAC, Electronic Certification Accreditation Council - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/ecac/ecac.svg>
+</a>
+<a href=/members/sixscape/ title="Sixscape Communications, Cryptographic Authentication & Identity - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="Sixscape Communications, Cryptographic Authentication & Identity - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Sixscape Communications, Cryptographic Authentication & Identity - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/sixscape/sixscape.svg>
+</a>
+<a href=/members/primekey/ title="PrimeKey, Creating trust for the connected society - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
+<img class=member-logo alt="PrimeKey, Creating trust for the connected society - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="PrimeKey, Creating trust for the connected society - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/primekey/primekey.svg>
 </a>
 <a href=/members/nlmod/ title="Dutch Ministry of Defence, Protecting what we value - A member of the PKI Consortium (Public Key Infrastructure Consortium)">
 <img class=member-logo alt="Dutch Ministry of Defence, Protecting what we value - A member of the PKI Consortium (Public Key Infrastructure Consortium)" title="Dutch Ministry of Defence, Protecting what we value - A member of the PKI Consortium (Public Key Infrastructure Consortium)" src=https://pkic.org/images/members/nlmod/nlmod.svg>
